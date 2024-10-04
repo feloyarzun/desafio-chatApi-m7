@@ -12,7 +12,7 @@ export default {
 
 <template>
   <div class="chat">
-    <div class="msg-container">
+    <div class="chat-container">
       <div
         v-for="(message, index) in messages"
         :key="index"
@@ -33,11 +33,10 @@ export default {
   border: 1px solid;
   border-radius: 8px;
   background-color: #e4e2d0;
-
   height: 500px;
 }
 
-.msg-container {
+.chat-container {
   height: 100%;
   overflow-y: auto;
   padding: 1rem;
